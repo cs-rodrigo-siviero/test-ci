@@ -1,0 +1,7 @@
+Flask
+ddtrace
+datadog
+autodynatrace
+mysql
+mysql-connector-python
+mysqlclient
