@@ -18,9 +18,9 @@ logging.basicConfig(format=FORMAT)
 log = logging.getLogger(__name__)
 log.level = logging.INFO
 
-options = {
-    'api_key': os.environ['DD_API_KEY'],
-}
+#options = {
+#    'api_key': os.environ['DD_API_KEY'],
+#}
 
 # initialize(**options)
 
