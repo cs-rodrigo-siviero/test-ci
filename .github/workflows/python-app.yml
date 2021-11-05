@@ -10,10 +10,9 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
-
+  test:
     runs-on: ubuntu-latest
-
+    
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.10
@@ -37,6 +36,11 @@ jobs:
 #     - name: Test with bandit
 #       run: |
 #         bandit main.py
+
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
     - name: Docker Build
       run: |
         docker build -t test-ci .
